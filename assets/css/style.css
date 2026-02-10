@@ -1,0 +1,182 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=League+Spartan:wght@100..900&family=Playwrite+US+Trad:wght@100..400&display=swap");
+
+@font-face {
+    font-family: 'Poster Gothic Cond ATF';
+    src: url('../fonts/Poster_Gothic/fonnts.com-Poster_Gothic_Cond_ATF_Heavy.otf') format('opentype');
+    font-weight: 800;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Poster Gothic Cond ATF';
+    src: url('../fonts/Poster_Gothic/fonnts.com-Poster_Gothic_Cond_ATF.otf') format('opentype');
+    font-weight: 400;
+    font-style: normal;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --Soft-black: #111;
+  --black: #000;
+  --Black: #000;
+  --aqua-color: #009899;
+  --white-color: #fff;
+  --White: #fff;
+  --gray-color: #d9d9d9;
+  --lightest-gray-color: #fafafa;
+  --Blue-bright: #2464db;
+  --Red1: #A50B01;
+}
+
+/* Common css start here  */
+
+a {
+  text-decoration: none;
+}
+
+
+
+input[type=number] {
+  -moz-appearance: textfield;
+  appearance: textfield;
+}
+
+a:hover {
+  text-decoration: none;
+  color: unset;
+}
+
+.mb-40 {
+  margin-bottom: 40px;
+}
+
+.mt-40 {
+  margin-top: 40px;
+}
+
+.my-40 {
+  margin-bottom: 40px;
+  margin-top: 40px;
+}
+
+.mb-30 {
+  margin-bottom: 30px;
+}
+
+.mt-30 {
+  margin-top: 30px;
+}
+
+.my-30 {
+  margin-bottom: 30px;
+  margin-top: 30px;
+}
+
+.py-40 {
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+.py-80 {
+  padding-top: 80px;
+  padding-bottom: 80px;
+}
+.pb-80 {
+  padding-bottom: 80px;
+}
+.py-120 {
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
+
+p {
+  margin-bottom: 0;
+  font-family: "League Spartan", sans-serif;
+  font-weight: 400;
+}
+
+ul {
+  margin-bottom: 0;
+}
+
+.container-unlimited-fluid {
+  max-width: 1680px;
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.container-unlimited-md {
+  max-width: 1360px;
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+.container-unlimited {
+  max-width: 1248px;
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+/* Common css end here  */
+
+
+/* User requested global styles */
+
+h1 {
+  color: var(--White, #FFF);
+  text-align: center;
+  font-family: "Poster Gothic Cond ATF", sans-serif;
+  font-size: 80px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: 80px; /* 100% */
+}
+
+h2 {
+  color: var(--Black, #000);
+  text-align: center;
+  font-family: "Inter", sans-serif;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 900;
+  line-height: normal;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+.btn-global {
+  color: var(--White, #FFF);
+  background: var(--Red1, #A50B01);
+  border-radius: 4px;
+  text-align: center;
+  font-family: Inter;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 900;
+  line-height: 20px;
+  text-transform: uppercase;
+  padding: 14px 22px;
+}
+
+.btn-global:hover {
+    color: var(--Red1, #A50B01);
+    background-color: var(--White, #FFF);
+    box-shadow: 0px 0px 0px 2px var(--Red1, #A50B01);
+}
+
+.hero-section {
+  background-color: var(--Soft-black);
+  padding: 120px 0;
+}
+
