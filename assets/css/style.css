@@ -496,6 +496,66 @@ line-height: 32px;
   color: rgba(255, 255, 255, 0.5);
 }
 /* Responsive Styles */
+@media (max-width: 1600px) {
+
+}
+@media (max-width: 1550px) {
+
+}
+
+/* Hero Section Styles */
+.video-hero-section {
+    position: relative;
+    height: 820px;
+    width: 100%;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+}
+
+.hero-video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -1;
+    transform: translate(-50%, -50%);
+    object-fit: cover;
+}
+
+.video-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.2);
+    z-index: 0;
+}
+
+.hero-content {
+    position: relative;
+    z-index: 1;
+}
+
+.hero-title{
+  color: var(--White, #fff);
+  text-align: center;
+  font-family: "Poster Gothic Cond ATF", sans-serif;
+  font-size: 80px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: 80px; 
+}
+
+@media (max-width: 1440px) {
+
+}
 @media (max-width: 1200px) {
   .header-left .nav-links {
     display: none; /* Hide main links on tablet/mobile */
@@ -588,8 +648,70 @@ line-height: 32px;
   .main-mega-menu, .inventory-menu {
       display: none !important;
   }
+
+  /* Hero Section Mobile Adjustments */
+  .video-hero-section {
+      height: 600px;
+  }
+
+  .hero-title {
+      font-size: 60px;
+      line-height: 60px; 
+  }
 }
 
 body.menu-open {
   overflow: hidden;
+}
+/* Large devices (Desktops, 991px and down) */
+/* Large devices (Desktops, 991px and down) */
+@media (max-width: 991.98px) {
+    /* CSS for tablets and small desktops */
+    .video-hero-section {
+        height: 550px;
+    }
+
+    .hero-title {
+        font-size: 50px;
+    }
+}
+
+/* Medium devices (Tablets, 767px and down) */
+@media (max-width: 767.98px) {
+    /* CSS for landscape phones and tablets */
+    .video-hero-section {
+        height: 480px;
+    }
+
+    .hero-title {
+        font-size: 40px;
+        line-height: 40px; 
+    }
+
+    .header-center .logo-wrapper img {
+      max-height: 60px; 
+    }
+}
+
+/* Small devices (Phones, 575px and down) */
+@media (max-width: 575.98px) {
+    /* CSS for portrait mobile view */
+    .video-hero-section {
+        height: 400px;
+    }
+
+    .hero-title {
+        font-size: 32px;
+        margin-bottom: 20px;
+        line-height: 32px; 
+    }
+    
+    .btn-global {
+        font-size: 14px;
+        padding: 10px 18px;
+    }
+    
+    .header-center .logo-wrapper img {
+      max-height: 50px; 
+    }
 }
