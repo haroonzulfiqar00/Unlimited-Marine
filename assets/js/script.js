@@ -51,6 +51,25 @@ $(document).ready(function() {
         }
     });
 
+    // Service Click Logic
+    $('.service-trigger').on('click', function(e) {
+        e.preventDefault();
+        e.stopPropagation(); // Prevent closing immediately
+        $('.service-menu').toggleClass('active');
+        
+        // Close other menus
+        $('.inventory-menu').removeClass('active');
+        $('.main-mega-menu').removeClass('active');
+        $('.menu-trigger').removeClass('active');
+    });
+
+    // Close service menu when clicking anywhere else
+    $(document).on('click', function(e) {
+        if (!$(e.target).closest('.service-trigger, .service-menu').length) {
+            $('.service-menu').removeClass('active');
+        }
+    });
+
     // Close inventory menu when clicking outside
     $(document).on('click', function(e) {
         if (!$(e.target).closest('.inventory-trigger, .inventory-menu').length) {

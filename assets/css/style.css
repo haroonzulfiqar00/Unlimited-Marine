@@ -148,6 +148,54 @@ ul {
 
 /* User requested global styles */
 
+/* Generic Section Utility Classes */
+.split-section {
+    padding: 64px 0;
+}
+
+.section-heading {
+color: var(--Black, #000);
+font-family: Inter;
+font-size: 40px;
+font-style: normal;
+font-weight: 900;
+line-height: normal;
+letter-spacing: 2px;
+text-transform: uppercase;
+margin-bottom: 40px;
+}
+
+.text-body-large {
+  color: var(--Black, #000);
+  font-family: Inter;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 24px;
+  margin-bottom: 40px;
+}
+
+.split-section {
+    background-color: #fff;
+}
+
+.split-image-wrapper {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.split-image-wrapper img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    display: block;
+}
+.split-section .splitsec-detail {
+    padding: 0 100px;
+}
+
+
 h1 {
   color: var(--White, #fff);
   text-align: center;
@@ -200,7 +248,7 @@ h2 {
   background-color: #000;
   padding: 10px 0;
   width: 100%;
-  position: relative;
+  position: fixed;
   z-index: 100;
 }
 
@@ -300,6 +348,61 @@ h2 {
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 1px;
+}
+
+.arrival-price {
+    font-size: 20px;
+    font-weight: 700;
+    color: var(--Red1, #a50b01);
+}
+
+/* Service Mega Menu */
+.mega-menu-overlay.service-menu {
+    top: 80px; /* Adjust based on header height */
+    height: auto;
+    width: 100%;
+    background-color: transparent; /* Container is transparent, content has background */
+    padding: 0;
+    overflow: visible;
+    display: none;
+    z-index: 99;
+}
+
+.mega-menu-overlay.service-menu.active {
+    display: block;
+    visibility: visible;
+    opacity: 1;
+    transform: none;
+}
+
+.service-menu .container-unlimited-fluid {
+    position: relative;
+    padding-left: 15px; /* Match header fluid container */
+    max-width: 1680px;
+    margin: 0 auto;
+}
+
+.service-menu-content {
+    background-color: #000;
+    padding: 24px 40px 48px 40px;
+    width: 380px;
+    position: absolute;
+    left: 16%;
+    top: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.service-menu-content a {
+    color: var(--White, #FFF);
+    font-family: Inter;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 24px;
+    text-decoration: none;
+    display: block;
 }
 
 .header-right .menu-trigger .hamburger {
@@ -433,12 +536,33 @@ line-height: 32px;
   position: relative;
   cursor: pointer;
   overflow: hidden;
+  display: block;
 }
 
 .inventory-card > img {
   height: 100%;
   width: 100%;
   object-fit: cover;
+}
+
+.hover-arrow {
+    position: absolute;
+    bottom: 120px; /* Positioned above the logo */
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 6;
+    opacity: 0;
+    transition: all 0.4s ease;
+}
+
+.hover-arrow img {
+    width: 60px; /* Adjust scale as needed */
+    height: auto;
+}
+
+.inventory-card:hover .hover-arrow {
+    opacity: 1;
+    bottom: 130px; /* Subtle float up effect */
 }
 
 .inventory-card::after {
@@ -495,12 +619,21 @@ line-height: 32px;
 .inventory-close .close-text img{
   color: rgba(255, 255, 255, 0.5);
 }
-/* Responsive Styles */
-@media (max-width: 1600px) {
 
+
+/* Financing Banner */
+.financing-banner {
+    padding: 60px 0;
+    background-color: #fff;
 }
-@media (max-width: 1550px) {
 
+.financing-text {
+    color: #000;
+    font-family: Inter;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 28px;
 }
 
 /* Hero Section Styles */
@@ -552,7 +685,153 @@ line-height: 32px;
   font-weight: 800;
   line-height: 80px; 
 }
+.inventory-section .inventory-card {
+    height: 560px;
+}
+.inventory-section .brand-logo-overlay img {
+    width: 200px;
+}
 
+/* body.menu-open {
+  overflow: hidden;
+} */
+
+/* New Arrivals Section */
+.new-arrivals-section {
+    padding: 120px 0;
+}
+
+.new-arrivals-header {
+    position: relative;
+    text-align: center;
+    margin-bottom: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.new-arrivals-section .section-title {
+color: var(--Black, #000);
+text-align: center;
+font-family: Inter;
+font-size: 40px;
+font-style: normal;
+font-weight: 900;
+line-height: normal;
+letter-spacing: 2px;
+text-transform: uppercase;
+}
+
+.new-arrivals-link-wrapper {
+    position: absolute;
+    right: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.view-listings-link {
+color: var(--Red1, #A50B01);
+font-family: Inter;
+font-size: 16px;
+font-style: normal;
+font-weight: 900;
+line-height: 20px; /* 125% */
+text-transform: uppercase;
+}
+
+
+.arrival-card {
+    display: block;
+    text-decoration: none;
+    color: inherit;
+}
+
+.arrival-card:hover { 
+    text-decoration: none;
+    color: inherit;
+}
+
+.arrival-image-wrapper {
+    height: 360px;
+    overflow: hidden;
+    background-color: #f8f9fa;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 16px;
+}
+
+.arrival-image-wrapper img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.arrival-title {
+color: #000;
+font-family: Inter;
+font-size: 18px;
+font-style: normal;
+font-weight: 900;
+line-height: 26px; /* 144.444% */
+text-transform: uppercase;
+margin: 0;
+}
+
+.arrival-price {
+color: var(--Red1, #A50B01);
+font-family: Inter;
+font-size: 18px;
+font-style: normal;
+font-weight: 900;
+line-height: 26px; /* 144.444% */
+text-transform: uppercase;
+}
+
+/* Service Mega Menu */
+.mega-menu-overlay.service-menu {
+    top: 80px; /* Adjust based on header height */
+    height: auto;
+    width: 100%;
+    background-color: transparent; /* Container is transparent, content has background */
+    padding: 0;
+    overflow: visible;
+    display: none;
+    z-index: 99;
+    pointer-events: none;
+}
+
+.mega-menu-overlay.service-menu.active {
+    display: block;
+    visibility: visible;
+    opacity: 1;
+    transform: none;
+    pointer-events: auto;
+}
+
+
+.service-menu-content {
+    background: rgba(0, 0, 0, 0.90);
+    backdrop-filter: blur(8px);
+    padding: 24px 40px 48px 40px;
+    width: 320px;
+    position: absolute;
+    left: 16%;
+    top: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+
+
+/* Responsive Styles */
+@media (max-width: 1600px) {
+
+}
+@media (max-width: 1550px) {
+
+}
 @media (max-width: 1440px) {
 
 }
@@ -593,7 +872,8 @@ line-height: 32px;
       margin-left: 0;
   }
 
-  /* Mobile Menu Styles */
+
+/* Mobile Menu Styles */
   .mobile-menu {
     top: 110px;
     height: 100vh;
@@ -660,13 +940,8 @@ line-height: 32px;
   }
 }
 
-body.menu-open {
-  overflow: hidden;
-}
-/* Large devices (Desktops, 991px and down) */
-/* Large devices (Desktops, 991px and down) */
 @media (max-width: 991.98px) {
-    /* CSS for tablets and small desktops */
+  
     .video-hero-section {
         height: 550px;
     }
@@ -674,11 +949,29 @@ body.menu-open {
     .hero-title {
         font-size: 50px;
     }
+    .new-arrivals-section {
+        padding: 80px 0;
+    }
+        .section-heading {
+        font-size: 40px;
+    }
+    .text-body-large {
+        font-size: 14px;
+        line-height: 22px;
+    }
+    .split-image-wrapper {
+        margin-top: 32px;
+    }
+    .split-section .splitsec-detail {
+    padding: 0;
+}
+.splitsec-detail{
+  text-align: center;
+  margin: 15px !important;
+}
 }
 
-/* Medium devices (Tablets, 767px and down) */
-@media (max-width: 767.98px) {
-    /* CSS for landscape phones and tablets */
+  @media (max-width: 767.98px) {
     .video-hero-section {
         height: 480px;
     }
@@ -691,11 +984,16 @@ body.menu-open {
     .header-center .logo-wrapper img {
       max-height: 60px; 
     }
+    .new-arrivals-link-wrapper {
+        position: unset !important;
+        margin-top: 18px;
+    }
+    .new-arrivals-section {
+        padding: 60px 0;
+    }
 }
 
-/* Small devices (Phones, 575px and down) */
 @media (max-width: 575.98px) {
-    /* CSS for portrait mobile view */
     .video-hero-section {
         height: 400px;
     }
@@ -713,5 +1011,8 @@ body.menu-open {
     
     .header-center .logo-wrapper img {
       max-height: 50px; 
+    }
+    .new-arrivals-section {
+        padding: 40px 0;
     }
 }
