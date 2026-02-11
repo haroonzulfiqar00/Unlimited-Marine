@@ -1,17 +1,19 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=League+Spartan:wght@100..900&family=Playwrite+US+Trad:wght@100..400&display=swap");
 
 @font-face {
-    font-family: 'Poster Gothic Cond ATF';
-    src: url('../fonts/Poster_Gothic/fonnts.com-Poster_Gothic_Cond_ATF_Heavy.otf') format('opentype');
-    font-weight: 800;
-    font-style: normal;
+  font-family: "Poster Gothic Cond ATF";
+  src: url("../fonts/Poster_Gothic/fonnts.com-Poster_Gothic_Cond_ATF_Heavy.otf")
+    format("opentype");
+  font-weight: 800;
+  font-style: normal;
 }
 
 @font-face {
-    font-family: 'Poster Gothic Cond ATF';
-    src: url('../fonts/Poster_Gothic/fonnts.com-Poster_Gothic_Cond_ATF.otf') format('opentype');
-    font-weight: 400;
-    font-style: normal;
+  font-family: "Poster Gothic Cond ATF";
+  src: url("../fonts/Poster_Gothic/fonnts.com-Poster_Gothic_Cond_ATF.otf")
+    format("opentype");
+  font-weight: 400;
+  font-style: normal;
 }
 
 * {
@@ -30,7 +32,7 @@
   --gray-color: #d9d9d9;
   --lightest-gray-color: #fafafa;
   --Blue-bright: #2464db;
-  --Red1: #A50B01;
+  --Red1: #a50b01;
 }
 
 /* Common css start here  */
@@ -39,16 +41,13 @@ a {
   text-decoration: none;
 }
 
-
-
-input[type=number] {
+input[type="number"] {
   -moz-appearance: textfield;
   appearance: textfield;
 }
 
 a:hover {
   text-decoration: none;
-  color: unset;
 }
 
 .mb-40 {
@@ -138,20 +137,19 @@ ul {
 }
 
 .container-century {
-    max-width: 1440px;
-    width: 100%;
-    padding-right: 15px;
-    padding-left: 15px;
-    margin-right: auto;
-    margin-left: auto;
+  max-width: 1440px;
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
 }
 /* Common css end here  */
-
 
 /* User requested global styles */
 
 h1 {
-  color: var(--White, #FFF);
+  color: var(--White, #fff);
   text-align: center;
   font-family: "Poster Gothic Cond ATF", sans-serif;
   font-size: 80px;
@@ -173,8 +171,8 @@ h2 {
 }
 
 .btn-global {
-  color: var(--White, #FFF);
-  background: var(--Red1, #A50B01);
+  color: var(--White, #fff);
+  background: var(--Red1, #a50b01);
   border-radius: 4px;
   text-align: center;
   font-family: Inter;
@@ -187,9 +185,9 @@ h2 {
 }
 
 .btn-global:hover {
-    color: var(--Red1, #A50B01);
-    background-color: var(--White, #FFF);
-    box-shadow: 0px 0px 0px 2px var(--Red1, #A50B01);
+  color: var(--Red1, #a50b01);
+  background-color: var(--White, #fff);
+  box-shadow: 0px 0px 0px 2px var(--Red1, #a50b01);
 }
 
 .hero-section {
@@ -197,319 +195,401 @@ h2 {
   padding: 120px 0;
 }
 
-
 /* Header Styles */
 .main-header {
-    background-color: #000;
-    padding: 10px 0;
-    width: 100%;
-    position: relative;
-    z-index: 100;
+  background-color: #000;
+  padding: 10px 0;
+  width: 100%;
+  position: relative;
+  z-index: 100;
 }
 
 .header-inner {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    position: relative;
-    min-height: 80px; /* Ensure space for absolute logo */
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+  min-height: 80px; /* Ensure space for absolute logo */
 }
 
 /* Left Section - Nav Links */
 .header-left .nav-links {
-    display: flex;
-    align-items: center;
-    gap: 40px;
-    list-style: none;
-    margin: 0;
-    padding: 0;
+  display: flex;
+  align-items: center;
+  gap: 50px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
 }
 
 .header-left .nav-links li a {
-    color: #FFF;
-    font-family: "Inter", sans-serif;
-    font-size: 15px;
-    font-weight: 700;
-    letter-spacing: 0.5px;
-    text-transform: uppercase;
-    transition: color 0.3s ease;
-}
-
-.header-left .nav-links li a:hover {
-    color: var(--Red1);
+  color: var(--White, #fff);
+  font-family: Inter;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 0.8px;
+  text-transform: uppercase;
 }
 
 /* Center Section - Logo */
 .header-center {
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%);
-    z-index: 10;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 10;
 }
 
 .header-center .logo-wrapper img {
-    max-height: 100px; /* Allow logo to be slightly larger than container if needed */
-    width: auto;
-    display: block;
-    transition: transform 0.3s ease;
-}
-
-.header-center .logo-wrapper:hover img {
-    transform: scale(1.05);
+  max-height: 130px;
+  width: auto;
+  display: block;
+  margin-top: 40px;
 }
 
 /* Right Section - Contact & Actions */
 .header-right {
-    display: flex;
-    align-items: center;
-    justify-content: flex-end;
-    gap: 25px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 40px;
 }
 
 .header-right .contact-box {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-end;
-    color: #FFF;
-    margin-right: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  color: var(--White, #fff);
+  margin-right: 10px;
 }
 
 .header-right .contact-box .contact-label {
-    font-family: "Inter", sans-serif;
-    font-size: 11px;
-    font-weight: 500;
-    opacity: 0.7;
-    text-transform: uppercase;
-    letter-spacing: 0.5px;
-    margin-bottom: 2px;
+  color: rgba(255, 255, 255, 0.6);
+  text-align: right;
+  font-family: Inter;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
 }
 
 .header-right .contact-box .contact-number {
-    color: #FFF;
-    font-family: "Poster Gothic Cond ATF", sans-serif;
-    font-size: 28px; /* Larger impact */
-    font-weight: 800;
-    line-height: 1;
-    letter-spacing: 1px;
-}
-
-.header-right .btn-pay {
-    background-color: var(--Red1);
-    color: #FFF;
-    font-family: "Inter", sans-serif;
-    font-weight: 800;
-    font-size: 14px;
-    padding: 12px 30px;
-    border-radius: 4px;
-    text-transform: uppercase;
-    border: none;
-    letter-spacing: 0.5px;
-    transition: all 0.3s ease;
-}
-
-.header-right .btn-pay:hover {
-    background-color: #FFF;
-    color: var(--Red1);
-    box-shadow: 0 0 10px rgba(255, 255, 255, 0.2);
+  color: var(--White, #fff);
+  text-align: right;
+  font-family: "Poster Gothic Cond ATF";
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: 40px;
 }
 
 .header-right .menu-trigger {
-    display: flex;
-    align-items: center;
-    gap: 12px;
-    cursor: pointer;
-    color: #FFF;
-    margin-left: 10px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  cursor: pointer;
+  color: #fff;
+  margin-left: 10px;
 }
 
 .header-right .menu-trigger .more-text {
-    font-family: "Inter", sans-serif;
-    font-size: 14px;
-    font-weight: 700;
-    text-transform: uppercase;
-    letter-spacing: 1px;
+  font-family: "Inter", sans-serif;
+  font-size: 14px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1px;
 }
 
 .header-right .menu-trigger .hamburger {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    width: 30px;
-    height: 18px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 30px;
+  height: 18px;
 }
 
 .header-right .menu-trigger .hamburger span {
-    display: block;
-    width: 100%;
-    height: 2px;
-    background-color: #FFF;
-    transition: all 0.3s ease;
+  display: block;
+  width: 100%;
+  height: 2px;
+  background-color: #fff;
+  transition: all 0.3s ease;
 }
 
 /* Hover state for hamburger */
 .header-right .menu-trigger:hover .hamburger span {
-    background-color: var(--Red1);
+  background-color: var(--Red1);
 }
-
 
 /* Mega Menu Overlay */
 .mega-menu-overlay {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100vh;
-    background-color: rgba(0, 0, 0, 0.95);
-    z-index: 90;
-    padding-top: 100px; /* Space for fixed header */
-    opacity: 0;
-    visibility: hidden;
-    transition: all 0.4s ease;
-    overflow-y: auto;
+  position: fixed;
+  top: 100px;
+  left: 0;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.90);
+backdrop-filter: blur(8px);
+  z-index: 90;
+  padding-top: 100px;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.4s ease;
+  overflow-y: auto;
 }
 
 .mega-menu-overlay.active {
-    opacity: 1;
-    visibility: visible;
+  opacity: 1;
+  visibility: visible;
 }
 
-.mega-menu-content {
-    padding: 40px 0;
-    color: #FFF;
+/* Main Mega Menu Styles */
+.main-mega-menu {
+  top: 100px;
+  height: calc(100vh - 100px);
+  padding-top: 0;
+  width: 460px;
+  max-width: 100%;
+  left: auto;
+  right: 0;
+  transform: translateX(100%);
+  transition: transform 0.4s ease-in-out, visibility 0.4s ease-in-out, opacity 0.4s ease-in-out;
+  opacity: 1;
+  visibility: hidden;
+  background: rgba(0, 0, 0, 0.90);
+backdrop-filter: blur(8px);
 }
 
-.mega-title {
-    font-family: "Poster Gothic Cond ATF", sans-serif;
-    font-size: 32px;
-    font-weight: 800;
-    color: var(--Red1);
-    margin-bottom: 25px;
-    text-transform: uppercase;
-    letter-spacing: 1px;
+.main-mega-menu.active {
+  transform: translateX(0);
+  visibility: visible;
 }
 
-.mega-links {
-    list-style: none;
-    padding: 0;
-    margin: 0;
+.main-link {
+color: var(--White, #FFF);
+text-align: right;
+font-family: Inter;
+font-size: 24px;
+font-style: normal;
+font-weight: 700;
+line-height: 32px; 
+  margin-bottom: 24px;
+  display: block;
 }
 
-.mega-links li {
-    margin-bottom: 15px;
+
+.sub-link {
+  color: var(--White, #FFF);
+  text-align: right;
+  font-family: Inter;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 24px;
+  display: block;
+  margin-bottom: 16px;
 }
 
-.mega-links li a {
-    color: #FFF;
-    font-family: "Inter", sans-serif;
-    font-size: 16px;
-    font-weight: 500;
-    text-transform: uppercase;
-    transition: color 0.3s ease;
-    display: inline-block;
+
+.main-menu-content {
+  padding: 24px 120px 0px 0px;
+  gap: 40px;
 }
 
-.mega-links li a:hover {
-    color: var(--Red1);
-    transform: translateX(5px);
+/* Inventory Mega Menu Styles */
+.inventory-menu.mega-menu-overlay {
+  height: 520px;
+  overflow: hidden;
+  padding-top: 0;
+  display: flex;
+  flex-direction: column;
+  z-index: -1;
 }
 
-.social-links {
-    display: flex;
-    gap: 15px;
+.inventory-menu .container-century {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
 }
 
-.social-links a {
-    color: #FFF;
-    font-size: 20px;
-    width: 40px;
-    height: 40px;
-    background: rgba(255,255,255,0.1);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border-radius: 50%;
-    transition: all 0.3s ease;
+.inventory-menu .mega-menu-content {
+  flex: 1;
+  overflow: hidden;
+  padding: 0;
 }
 
-.social-links a:hover {
-    background: var(--Red1);
-    transform: translateY(-3px);
+.inventory-menu .mega-menu-content > .row > .col-md-3:first-child {
+  padding-top: 40px;
+  padding-bottom: 40px;
 }
 
-.mega-contact p {
-    font-family: "Inter", sans-serif;
-    font-size: 14px;
-    opacity: 0.7;
-    margin-bottom: 5px;
-    text-transform: uppercase;
+.inventory-menu .row {
+  height: 100%;
 }
 
-.mega-phone {
-    font-family: "Poster Gothic Cond ATF", sans-serif;
-    font-size: 36px;
-    color: #FFF;
-    font-weight: 800;
-    transition: color 0.3s ease;
+.inventory-card {
+  height: 360px;
+  position: relative;
+  cursor: pointer;
+  overflow: hidden;
 }
 
-.mega-phone:hover {
-    color: var(--Red1);
+.inventory-card > img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
 }
 
-/* Hamburger Animation */
-.menu-trigger.active .hamburger span:nth-child(1) {
-    transform: rotate(45deg) translate(5px, 5px);
+.inventory-card::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 40%;
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0));
+  z-index: 1;
+  pointer-events: none;
 }
 
-.menu-trigger.active .hamburger span:nth-child(2) {
-    opacity: 0;
+
+.brand-logo-overlay {
+  position: absolute;
+  bottom: 40px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 80%;
+  z-index: 5; /* Increased to be above the gradient overlay */
+  text-align: center;
 }
 
-.menu-trigger.active .hamburger span:nth-child(3) {
-    transform: rotate(-45deg) translate(5px, -6px);
+.brand-logo-overlay img {
+  width: 160px;
+  display: inline-block !important;
 }
 
+.inventory-links-list li {
+  list-style: none;
+  margin-bottom: 16px;
+}
+.inventory-links-list li a {
+  color: var(--White, #fff);
+  font-family: Inter;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 24px;
+}
+
+
+.inventory-close .close-text{
+  color: rgba(255, 255, 255, 0.5);
+  font-family: Inter;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 24px;
+}
+
+.inventory-close .close-text img{
+  color: rgba(255, 255, 255, 0.5);
+}
 /* Responsive Styles */
 @media (max-width: 1200px) {
-    .header-left .nav-links {
-        display: none; /* Hide main links on tablet/mobile */
-    }
-    
-    .header-center .logo-wrapper img {
-        max-height: 70px; /* Smaller logo */
-    }
-    
-    .main-header {
-        padding: 10px 0;
-    }
-    
-    .header-right .contact-box {
-        display: none; /* Hide full contact box on smaller screens */
-    }
-    
-    .header-right .btn-pay {
-        padding: 8px 15px;
-        font-size: 12px;
-    }
-    
-    .mega-menu-content {
-        padding-top: 20px;
-    }
+  .header-left .nav-links {
+    display: none; /* Hide main links on tablet/mobile */
+  }
 
-    .mega-title {
-        margin-top: 30px;
-        margin-bottom: 15px;
-        font-size: 24px;
-    }
+  .header-inner {
+      justify-content: space-between;
+      min-height: 80px;
+  }
 
+  /* Reset absolute positioning for mobile logo */
+  .header-center {
+    position: static; 
+    transform: none;
+    margin-right: auto; /* Push to left */
+  }
 
-    .container-century {
-        padding-left: 15px;
-        padding-right: 15px;
-    }
+  .header-center .logo-wrapper img {
+    max-height: 90px; /* Smaller logo */
+    margin-top: 0; /* Reset margin */
+  }
+
+  .main-header {
+    padding: 10px 0;
+  }
+
+  .header-right .contact-box, 
+  .header-right .btn-global,
+  .header-right .menu-trigger .more-text {
+    display: none; /* Hide desktop elements */
+  }
+  
+  .header-right .menu-trigger {
+      display: block; /* Ensure hamburger is visible */
+      margin-left: 0;
+  }
+
+  /* Mobile Menu Styles */
+  .mobile-menu {
+    top: 110px;
+    height: 100vh;
+    background-color: #000;
+    overflow-y: auto;
+    display: block;
+    padding-top: 40px;
+  }
+  
+  .mobile-menu.active {
+      opacity: 1;
+      visibility: visible;
+  }
+
+  .mobile-accordion-header {
+      cursor: pointer;
+  }
+
+  .mobile-accordion-header h5 {
+      font-family: "Inter", sans-serif;
+      font-weight: 700;
+      letter-spacing: 1px;
+  }
+
+  .mobile-accordion-body {
+      background-color: #1a1a1a !important; /* Slightly lighter black */
+  }
+
+  .mobile-accordion-body a {
+      font-size: 16px;
+      padding: 5px 0;
+      display: block;
+      color: #ccc !important;
+  }
+
+  .mega-menu-content {
+    padding-top: 20px;
+  }
+
+  .mega-title {
+    margin-top: 30px;
+    margin-bottom: 15px;
+    font-size: 24px;
+  }
+
+  .container-century {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  
+  /* Hide Desktop Mega Menus on Mobile */
+  .main-mega-menu, .inventory-menu {
+      display: none !important;
+  }
 }
 
 body.menu-open {
-    overflow: hidden;
+  overflow: hidden;
 }

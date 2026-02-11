@@ -21,11 +21,11 @@
 <body>
 
     <header class="main-header">
-        <div class="nav-container">
+        <div class="container-unlimited-fluid">
             <div class="header-inner">
                 <div class="header-left">
                     <ul class="nav-links">
-                        <li><a href="inventory.html">INVENTORY</a></li>
+                        <li><a href="inventory.html" class="inventory-trigger">INVENTORY</a></li>
                         <li><a href="financing.html">FINANCING</a></li>
                         <li><a href="service.html">SERVICE</a></li>
                     </ul>
@@ -42,7 +42,7 @@
                         <span class="contact-label">Call or Text</span>
                         <a href="tel:2708586911" class="contact-number">270.858.6911</a>
                     </div>
-                    <a href="#" class="btn-global btn-pay">PAY NOW</a>
+                    <a href="#" class="btn-global">PAY NOW</a>
                     <div class="menu-trigger">
                         <span class="more-text">MORE</span>
                         <div class="hamburger">
@@ -55,51 +55,166 @@
             </div>
         </div>
 
-    <div class="mega-menu-overlay">
-        <div class="container-century">
-            <div class="mega-menu-content">
+
+    <!-- Main Mega Menu (Slide from Right) -->
+    <div class="mega-menu-overlay main-mega-menu">
+        <div class="d-flex flex-column main-menu-content">
+            <ul class="list-unstyled text-right">
+                <li class=""><a href="#" class="main-link">About Us</a></li>
+                <li class=""><a href="#" class="main-link">Events & Promotions</a></li>
+                <li class=""><a href="#" class="main-link">Meet Our Staff</a></li>
+            </ul>
+            
+            <ul class="list-unstyled text-right">
+                <li class=""><a href="#" class="sub-link">Employment</a></li>
+                <li class=""><a href="#" class="sub-link">Testimonials</a></li>
+                <li class=""><a href="#" class="sub-link">Contact Us</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Inventory Mega Menu -->
+    <div class="mega-menu-overlay inventory-menu">
+        <div class="menu-close-btn inventory-close text-right pr-lg-5 pt-lg-4">
+            <span class="close-text" style="cursor: pointer;"> <img src="./assets/images/mega-menu/close.svg" alt="Close"> Close</span>
+        </div>
+        <div class="nav-container pt-2">
+            <div class="">
                 <div class="row">
                     <div class="col-md-3">
-                        <h4 class="mega-title">Boats</h4>
-                        <ul class="mega-links">
-                            <li><a href="#">New Inventory</a></li>
-                            <li><a href="#">Pre-Owned Inventory</a></li>
-                            <li><a href="#">Financing</a></li>
-                            <li><a href="#">Trade-In</a></li>
+                        <ul class="mega-links inventory-links-list">
+                            <li><a href="#">All Inventory</a></li>
+                            <li><a href="#">New Boats</a></li>
+                            <li><a href="#">Pre-Owned Boats</a></li>
+                            <li><a href="#">Promotional</a></li>
+                        </ul>
+                        <ul class="mega-links inventory-links-list mt-5">
+                            <li><a href="#">Consign/Trade Your Boat</a></li>
+                            <li><a href="#">Get Financing</a></li>
                         </ul>
                     </div>
-                    <div class="col-md-3">
-                        <h4 class="mega-title">Services</h4>
-                        <ul class="mega-links">
-                            <li><a href="#">Service Center</a></li>
-                            <li><a href="#">Parts Department</a></li>
-                            <li><a href="#">Winterization</a></li>
-                            <li><a href="#">Storage</a></li>
-                        </ul>
-                    </div>
-                    <div class="col-md-3">
-                        <h4 class="mega-title">Company</h4>
-                        <ul class="mega-links">
-                            <li><a href="#">About Us</a></li>
-                            <li><a href="#">Our Team</a></li>
-                            <li><a href="#">Careers</a></li>
-                            <li><a href="#">Contact Us</a></li>
-                        </ul>
-                    </div>
-                    <div class="col-md-3">
-                        <h4 class="mega-title">Connect</h4>
-                        <div class="social-links">
-                            <a href="#"><i class="fa fa-facebook"></i></a>
-                            <a href="#"><i class="fa fa-instagram"></i></a>
-                            <a href="#"><i class="fa fa-twitter"></i></a>
-                            <a href="#"><i class="fa fa-youtube"></i></a>
-                        </div>
-                        <div class="mega-contact mt-4">
-                            <p>Call or Text</p>
-                            <a href="tel:2708586911" class="mega-phone">270.858.6911</a>
+                    <div class="col-md-9 p-lg-0">
+                        <div class="row">
+                            <div class="col-md-3 p-1">
+                                <div class="inventory-card">
+                                    <img src="./assets/images/home/Formula-img.png" alt="Formula" class="img-fluid">
+                                    <div class="brand-logo-overlay">
+                                        <img src="./assets/images/home/Formula-wt.png" alt="Formula Logo">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-3 p-1">
+                                <div class="inventory-card">
+                                    <img src="./assets/images/home/nortech-img.png" alt="Nor-Tech" class="img-fluid">
+                                    <div class="brand-logo-overlay">
+                                        <img src="./assets/images/home/nortech-logo.png" alt="Nor-Tech Logo">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-3 p-1">
+                                <div class="inventory-card">
+                                    <img src="./assets/images/home/veranda-img.png" alt="Veranda" class="img-fluid">
+                                    <div class="brand-logo-overlay">
+                                        <img src="./assets/images/home/veranda-logo.png" alt="Veranda Logo">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-3 p-1">
+                                <div class="inventory-card">
+                                    <img src="./assets/images/home/xpress-img.png" alt="Xpress" class="img-fluid">
+                                    <div class="brand-logo-overlay">
+                                        <img src="./assets/images/home/xpress-boats-wt.png" alt="Xpress Logo">
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
+            </div>
+        </div>
+    </div>
+    <!-- Mobile Mega Menu -->
+    <div class="mega-menu-overlay mobile-menu">
+        <div class="mobile-menu-content">
+            <div class="accordion" id="mobileMenuAccordion">
+                
+                <!-- Inventory Accordion -->
+                <div class="mobile-accordion-item border-bottom border-secondary">
+                    <div class="mobile-accordion-header p-3" id="headingInventory" data-toggle="collapse" data-target="#collapseInventory" aria-expanded="true" aria-controls="collapseInventory">
+                        <h5 class="mb-0 text-white d-flex justify-content-between align-items-center">
+                            BOATS
+                            <i class="fa fa-chevron-down text-danger"></i>
+                        </h5>
+                    </div>
+                    <div id="collapseInventory" class="collapse" aria-labelledby="headingInventory" data-parent="#mobileMenuAccordion">
+                        <div class="mobile-accordion-body p-3 bg-dark">
+                            <ul class="list-unstyled">
+                                <li class="mb-2"><a href="#" class="text-white">All Inventory</a></li>
+                                <li class="mb-2"><a href="#" class="text-white">New Boats</a></li>
+                                <li class="mb-2"><a href="#" class="text-white">Pre-Owned Boats</a></li>
+                                <li class="mb-2"><a href="#" class="text-white">Promotional</a></li>
+                                <li class="mb-2"><a href="#" class="text-white">Consign/Trade Your Boat</a></li>
+                                <li class="mb-2"><a href="#" class="text-white">Get Financing</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Service Accordion -->
+                <div class="mobile-accordion-item border-bottom border-secondary">
+                    <div class="mobile-accordion-header p-3" id="headingService" data-toggle="collapse" data-target="#collapseService" aria-expanded="false" aria-controls="collapseService">
+                        <h5 class="mb-0 text-white d-flex justify-content-between align-items-center">
+                            SERVICE
+                            <i class="fa fa-chevron-down text-danger"></i>
+                        </h5>
+                    </div>
+                    <div id="collapseService" class="collapse" aria-labelledby="headingService" data-parent="#mobileMenuAccordion">
+                        <div class="mobile-accordion-body p-3 bg-dark">
+                            <ul class="list-unstyled">
+                                <li class="mb-2"><a href="service.html" class="text-white">Service Center</a></li>
+                                <li class="mb-2"><a href="#" class="text-white">Parts Department</a></li>
+                                <li class="mb-2"><a href="#" class="text-white">Winterization</a></li>
+                                <li class="mb-2"><a href="#" class="text-white">Storage</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Company Accordion -->
+                <div class="mobile-accordion-item border-bottom border-secondary">
+                    <div class="mobile-accordion-header p-3" id="headingCompany" data-toggle="collapse" data-target="#collapseCompany" aria-expanded="false" aria-controls="collapseCompany">
+                        <h5 class="mb-0 text-white d-flex justify-content-between align-items-center">
+                            COMPANY
+                            <i class="fa fa-chevron-down text-danger"></i>
+                        </h5>
+                    </div>
+                    <div id="collapseCompany" class="collapse" aria-labelledby="headingCompany" data-parent="#mobileMenuAccordion">
+                        <div class="mobile-accordion-body p-3 bg-dark">
+                            <ul class="list-unstyled">
+                                <li class="mb-2"><a href="#" class="text-white">About Us</a></li>
+                                <li class="mb-2"><a href="#" class="text-white">Our Team</a></li>
+                                <li class="mb-2"><a href="#" class="text-white">Careers</a></li>
+                                <li class="mb-2"><a href="#" class="text-white">Contact Us</a></li>
+                                <li class="mb-2"><a href="#" class="text-white">Events & Promotions</a></li>
+                                <li class="mb-2"><a href="#" class="text-white">Testimonials</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Financing Link (No accordion needed if single page, but keeping consistent style if desired, or just a link) -->
+                 <div class="mobile-accordion-item border-bottom border-secondary">
+                     <div class="p-3">
+                         <h5 class="mb-0">
+                             <a href="financing.html" class="text-white text-uppercase d-block">FINANCING</a>
+                         </h5>
+                     </div>
+                 </div>
+
+            </div>
+             <div class="mobile-contact p-3 mt-4">
+                 <a href="tel:2708586911" class="d-block text-white h4 font-weight-bold">270.858.6911</a>
+                 <a href="#" class="btn btn-danger btn-block mt-3 font-weight-bold text-uppercase">Pay Now</a>
             </div>
         </div>
     </div>
