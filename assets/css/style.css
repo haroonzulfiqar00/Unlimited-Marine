@@ -1187,15 +1187,24 @@ text-transform: uppercase;
     font-style: normal;
     font-weight: 400;
     line-height: 24px;
-    max-width: 300px;
     margin: 0 auto;
 }
 
 /* Valuation Form Styles */
-.valuation-form-section {
+.unlimited-form-section {
     background-color: #fff;
     border-top: 1px solid #D9D9D9;
     padding: 64px 0;
+}
+
+.unlimited-form-section .title-desc {
+    color: var(--Blackish, #1D1D1D);
+    text-align: center;
+    font-family: Inter;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 24px;
 }
 
 .valuation-form .form-control {
@@ -1506,7 +1515,7 @@ line-height: 24px;
         margin-bottom: 12px;
     }
 
-  .valuation-form-section {
+  .unlimited-form-section {
       padding: 40px 0;
   }
 
