@@ -1260,6 +1260,34 @@ line-height: 24px;
     box-shadow: 0 0 0 0.2rem rgba(165, 11, 1, 0.25);
 }
 
+/* Certified Technicians Section Styles */
+.technicians-section {
+    background-color: #fff;
+    padding: 64px 0;
+}
+
+.technicians-section .section-heading {
+    text-align: center;
+    margin-bottom: 24px;
+}
+
+.technicians-section p {
+    color: var(--Black, #000);
+    text-align: center;
+    font-family: Inter;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 24px;
+}
+
+.certified-logo {
+    max-width: 160px;
+    object-fit: contain;
+    width: 100%;
+    margin: 0 auto;
+}
+
 /* Responsive Styles */
 
 @media screen and (min-width: 992px) {
@@ -1402,7 +1430,12 @@ line-height: 24px;
   .video-hero-section {
     height: 550px;
   }
-
+.split-section {
+    padding: 34px 0;
+}
+.technicians-section {
+    padding: 34px 0;
+}
   .hero-title {
     font-size: 50px;
   }
@@ -1617,4 +1650,41 @@ line-height: 24px;
   .new-arrivals-section {
     padding: 40px 0;
   }
+}
+
+/* DIY & Mobile Service Section Styles */
+.diy-mobile-section {
+    background-color: #000;
+}
+
+.service-subtitle {
+    color: var(--White, #FFF);
+    font-family: Inter;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: normal;
+    text-transform: uppercase;
+    margin-bottom: 24px;
+    letter-spacing: 1px;
+}
+
+.service-desc {
+    color: var(--White, #FFF);
+    font-family: Inter;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+}
+
+.service-image-wrapper {
+    width: 100%;
+    margin-bottom: 32px;
+}
+
+.service-image-wrapper img {
+    width: 100%;
+    height: auto;
+    display: block;
 }
