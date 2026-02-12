@@ -87,4 +87,25 @@ $(document).ready(function() {
             $('body').removeClass('menu-open');
         }
     });
+    // Facebook Gallery Carousel
+    $('.facebook-gallery-carousel').owlCarousel({
+        loop: true,
+        margin: 4,
+        nav: false,
+        dots: false,
+        autoplay: false,
+        autoplayTimeout: 3000,
+        responsive: {
+            0: {
+                items: 2
+            },
+            768: {
+                items: 3
+            },
+            1000: {
+                items: 5
+            }
+        }
+    });
+
 });
