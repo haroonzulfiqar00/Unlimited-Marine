@@ -1506,9 +1506,9 @@ text-transform: uppercase;
   color: #000;
 }
 
-.contact-form textarea.form-control {
+/* .contact-form textarea.form-control {
   min-height: 150px;
-}
+} */
 
 /* Map Section Styles */
 .map-section iframe {
@@ -1529,7 +1529,7 @@ text-transform: uppercase;
 /* Finance Benefits Section Styles */
 .finance-benefits-section {
     background-color: #fff;
-    padding: 100px 0;
+    padding-bottom: 64px;
 }
 
 .finance-benefits-section .section-title {
@@ -1549,11 +1549,11 @@ text-transform: uppercase;
     padding: 0 15px;
 }
 
-.benefit-icon {
+/* .benefit-icon {
     width: 48px;
     height: 48px;
     flex-shrink: 0;
-}
+} */
 
 .benefit-icon img {
     width: 100%;
@@ -1808,14 +1808,18 @@ text-transform: uppercase;
   }
 
   .finance-benefits-section {
-      padding: 60px 0;
+      padding-bottom: 40px;
   }
   
   .finance-benefits-section .section-title {
       font-size: 20px;
       margin-bottom: 40px;
   }
-
+  .financing-herosec h1 {
+      font-size: 44px;
+      line-height: 45px;
+      margin-bottom: 20px;
+  }
 
   /* -----footer style ------  */
 
@@ -1884,6 +1888,11 @@ text-transform: uppercase;
   h2 {
     font-size: 24px;
     letter-spacing: 1px;
+  }
+  .financing-herosec h1 {
+      font-size: 32px;
+      line-height: 36px;
+      margin-bottom: 12px;
   }
   .video-hero-section {
     height: 480px;
