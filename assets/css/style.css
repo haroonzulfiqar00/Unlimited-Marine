@@ -1515,6 +1515,60 @@ text-transform: uppercase;
   display: block;
   width: 100%;
 }
+.financing-herosec h1 {
+  color: var(--Black, #000);
+  font-family: "Poster Gothic Cond ATF";
+  font-size: 64px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: 72px; /* 112.5% */
+  text-transform: uppercase;
+    margin-bottom: 24px;
+}
+
+/* Finance Benefits Section Styles */
+.finance-benefits-section {
+    background-color: #fff;
+    padding: 100px 0;
+}
+
+.finance-benefits-section .section-title {
+    color: var(--Black, #000);
+    text-align: center;
+    font-family: Inter;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: normal;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 60px;
+}
+
+.benefit-item {
+    padding: 0 15px;
+}
+
+.benefit-icon {
+    width: 48px;
+    height: 48px;
+    flex-shrink: 0;
+}
+
+.benefit-icon img {
+    width: 100%;
+    height: auto;
+}
+
+.benefit-text {
+    color: var(--Black, #000);
+    font-family: Inter;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 24px; 
+}
+
 /* Responsive Styles */
 
 @media screen and (min-width: 992px) {
@@ -1752,6 +1806,17 @@ text-transform: uppercase;
   .contact-section {
     padding: 60px 0;
   }
+
+  .finance-benefits-section {
+      padding: 60px 0;
+  }
+  
+  .finance-benefits-section .section-title {
+      font-size: 20px;
+      margin-bottom: 40px;
+  }
+
+
   /* -----footer style ------  */
 
   .site-footer {
@@ -1892,3 +1957,4 @@ text-transform: uppercase;
     padding: 40px 0;
   }
 }
+
