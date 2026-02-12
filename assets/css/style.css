@@ -152,6 +152,16 @@ ul {
 .split-section {
   padding: 64px 0;
 }
+.sub-heading {
+  color: var(--Black, #000); 
+font-family: Inter;
+font-size: 24px;
+font-style: normal;
+font-weight: 900;
+line-height: 32px; 
+letter-spacing: 1.2px;
+text-transform: uppercase;
+}
 
 .section-heading {
   color: var(--Black, #000);
@@ -1297,6 +1307,114 @@ line-height: 24px;
     margin: 0 auto;
 }
 
+/* DIY & Mobile Service Section Styles */
+.diy-mobile-section {
+    background-color: #000;
+}
+
+.service-subtitle {
+    color: var(--White, #FFF);
+    font-family: Inter;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: normal;
+    text-transform: uppercase;
+    margin-bottom: 24px;
+    letter-spacing: 1px;
+}
+
+.service-desc {
+    color: var(--White, #FFF);
+    font-family: Inter;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+}
+
+.service-image-wrapper {
+    width: 100%;
+    margin-bottom: 32px;
+}
+
+.service-image-wrapper img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* Our Culture Section Styles */
+.culture-section {
+    background-color: #fff;
+}
+
+.culture-section .section-title {
+    color: var(--Black, #000);
+    text-align: center;
+    font-family: "Poster Gothic Cond ATF", sans-serif;
+    font-size: 40px;
+    font-weight: 800;
+    line-height: normal;
+    text-transform: uppercase;
+    margin-bottom: 24px;
+}
+
+.culture-subtitle {
+    color: var(--Black, #000);
+    text-align: center;
+    font-family: Inter;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: normal;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.culture-desc {
+    color: var(--Black, #000);
+    text-align: center;
+    font-family: Inter;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+}
+
+.hexagon-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.hexagon-icon img {
+    max-height: 100%;
+    width: auto;
+}
+
+.culture-item-title {
+    color: var(--Black, #000);
+    text-align: center;
+    font-family: Inter;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: normal;
+    text-transform: uppercase;
+    margin-bottom: 16px;
+}
+
+.culture-item-desc {
+    color: var(--Black, #000);
+    text-align: center;
+    font-family: Inter;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+}
+
 /* Responsive Styles */
 
 @media screen and (min-width: 992px) {
@@ -1519,6 +1637,10 @@ line-height: 24px;
       padding: 40px 0;
   }
 
+    .culture-item-title {
+        height: auto;
+        margin-bottom: 12px;
+    }
 
   /* -----footer style ------  */
 
@@ -1659,41 +1781,4 @@ line-height: 24px;
   .new-arrivals-section {
     padding: 40px 0;
   }
-}
-
-/* DIY & Mobile Service Section Styles */
-.diy-mobile-section {
-    background-color: #000;
-}
-
-.service-subtitle {
-    color: var(--White, #FFF);
-    font-family: Inter;
-    font-size: 20px;
-    font-style: normal;
-    font-weight: 900;
-    line-height: normal;
-    text-transform: uppercase;
-    margin-bottom: 24px;
-    letter-spacing: 1px;
-}
-
-.service-desc {
-    color: var(--White, #FFF);
-    font-family: Inter;
-    font-size: 14px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 24px;
-}
-
-.service-image-wrapper {
-    width: 100%;
-    margin-bottom: 32px;
-}
-
-.service-image-wrapper img {
-    width: 100%;
-    height: auto;
-    display: block;
 }
