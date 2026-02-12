@@ -229,6 +229,7 @@ h2 {
   line-height: 20px;
   text-transform: uppercase;
   padding: 14px 22px;
+  display: inline-block;
 }
 
 .btn-global:hover {
@@ -1020,7 +1021,244 @@ line-height: 24px;
   opacity: 0.6;
 }
 
+/* Generic Page Hero Section */
+.page-hero-section {
+    height: 600px;
+    width: 100%;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    margin-top: 0;
+    overflow: hidden;
+}
 
+
+/* Hero Background Image */
+.page-hero-bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: 0;
+}
+
+.page-hero-section .container-unlimited {
+    position: relative;
+    z-index: 2;
+}
+
+.page-hero-title {
+    color: var(--White, #FFF);
+    text-align: center;
+    font-family: "Poster Gothic Cond ATF";
+    font-size: 80px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+    text-transform: uppercase;
+    margin-bottom: 25px;
+}
+
+.page-hero-subtitle {
+    color: var(--White, #FFF);
+    font-family: Inter;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    margin-bottom: 35px;
+}
+
+/* Trade Process Section Styles */
+/* .trade-process-section {
+    background-color: #000;
+    padding: 64px 0;
+    color: #fff;
+    width: 100%;
+}
+
+.trade-process-section .section-title {
+    color: var(--White, #FFF);
+    text-align: center;
+    font-family: Inter;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: normal;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    margin-bottom: 60px;
+}
+
+.process-icon-wrap {
+    height: 120px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.process-icon {
+    max-height: 100%;
+    width: auto;
+}
+
+.process-title {
+color: var(--White, #FFF);
+text-align: center;
+font-family: Inter;
+font-size: 24px;
+font-style: normal;
+font-weight: 900;
+line-height: 32px;
+letter-spacing: 1.2px;
+text-transform: uppercase;
+}
+
+.process-desc {
+    color: var(--White, #FFF);
+    text-align: center;
+    font-family: Inter;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+    margin: 0 auto;
+} */
+/* Trade Process Section Styles (Restored if missing) */
+.trade-process-section {
+    background-color: #000;
+    padding: 100px 0;
+    color: #fff;
+    width: 100%;
+}
+
+.trade-process-section .section-title {
+    color: var(--White, #FFF);
+    text-align: center;
+    font-family: Inter;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: normal;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    margin-bottom: 60px;
+}
+
+.process-icon-wrap {
+    height: 120px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.process-icon {
+    max-height: 100%;
+    width: auto;
+}
+
+.process-title {
+    color: var(--White, #FFF);
+    text-align: center;
+    font-family: Inter;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: normal;
+    text-transform: uppercase;
+    margin-bottom: 16px;
+    height: 48px; /* Force consistent height for alignment */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.process-desc {
+    color: var(--White, #FFF);
+    text-align: center;
+    font-family: Inter;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+    max-width: 300px;
+    margin: 0 auto;
+}
+
+/* Valuation Form Styles */
+.valuation-form-section {
+    background-color: #fff;
+    border-top: 1px solid #D9D9D9;
+    padding: 64px 0;
+}
+
+.valuation-form .form-control {
+    border-radius: 2px; 
+    border: 1px solid #D9D9D9;
+    padding: 12px 15px;
+    height: 50px;
+    font-family: Inter;
+    font-size: 14px;
+    color: #000;
+    background-color: #fafafa;
+}
+
+.valuation-form textarea.form-control {
+    height: auto;
+}
+
+.valuation-form .form-control::placeholder {
+    color: var(--Blackish, #1D1D1D);
+    font-family: Inter;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+line-height: 24px; 
+}
+.valuation-form .form-control:focus {
+    box-shadow: none;
+    border-color: #1D1D1D;
+}
+
+.form-subheading {
+    color: #000;
+    font-family: Inter;
+    font-size: 18px;
+    font-weight: 900;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.radio-group-label {
+    color: #1D1D1D;
+    font-family: Inter;
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.custom-control-label {
+    font-family: Inter;
+    font-size: 16px;
+    color: #1D1D1D;
+    padding-left: 5px;
+    cursor: pointer;
+}
+
+/* Custom Radio Button Color */
+.custom-radio .custom-control-input:checked ~ .custom-control-label::before {
+    background-color: var(--Red1, #a50b01);
+    border-color: var(--Red1, #a50b01);
+}
+
+.custom-control-input:focus ~ .custom-control-label::before {
+    box-shadow: 0 0 0 0.2rem rgba(165, 11, 1, 0.25);
+}
 
 /* Responsive Styles */
 
@@ -1153,6 +1391,14 @@ line-height: 24px;
 }
 
 @media (max-width: 991.98px) {
+  h1 {
+    font-size: 40px;
+    letter-spacing: 1px;
+}
+  h2 {
+    font-size: 32px;
+    letter-spacing: 1px;
+}
   .video-hero-section {
     height: 550px;
   }
@@ -1164,7 +1410,9 @@ line-height: 24px;
     padding: 80px 0;
   }
   .section-heading {
-    font-size: 40px;
+    font-size: 32px;
+    line-height: 36px;
+    margin-bottom: 20px;
   }
   .text-body-large {
     font-size: 14px;
@@ -1185,8 +1433,52 @@ line-height: 24px;
   }
 
   .facebook-section {
-    padding-top: 60px;
+    padding-top: 40px;
   }
+
+
+    .page-hero-section {
+        height: 500px;
+    }
+    
+    .page-hero-title {
+        font-size: 40px;
+    }
+
+    .trade-process-section {
+        padding: 40px 0;
+    }
+    
+    .trade-process-section .section-title {
+        font-size: 32px;
+        margin-bottom: 40px;
+    }
+    
+    .process-title {
+        height: auto;
+        margin-bottom: 12px;
+    }
+
+    .trade-process-section {
+        padding: 60px 0;
+    }
+    
+    .trade-process-section .section-title {
+        font-size: 32px;
+        margin-bottom: 40px;
+    }
+    
+    .process-title {
+        height: auto;
+        margin-bottom: 12px;
+    }
+
+  .valuation-form-section {
+      padding: 40px 0;
+  }
+
+
+  /* -----footer style ------  */
 
   .site-footer {
     padding-top: 40px;
@@ -1246,6 +1538,14 @@ line-height: 24px;
 }
 
 @media (max-width: 767.98px) {
+    h1 {
+    font-size: 32px;
+    letter-spacing: 1px;
+}
+  h2 {
+    font-size: 24px;
+    letter-spacing: 1px;
+}
   .video-hero-section {
     height: 480px;
   }
@@ -1279,6 +1579,20 @@ line-height: 24px;
   .facebook-header p {
     padding: 0 15px;
   }
+  
+    .page-hero-section {
+        height: 400px;
+    }
+    
+    .page-hero-title {
+        font-size: 40px;
+        line-height: 1.1;
+    }
+    
+    .page-hero-subtitle {
+        font-size: 14px;
+        letter-spacing: 1px;
+    }
 }
 
 @media (max-width: 576px) {
