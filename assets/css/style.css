@@ -1569,6 +1569,70 @@ text-transform: uppercase;
     line-height: 24px; 
 }
 
+/* Staff Profile Section Styles */
+.staff-profile-section {
+    background-color: #fff;
+    
+}
+
+.staff-name {
+    color: var(--Black, #000);
+    font-family: "Poster Gothic Cond ATF", sans-serif;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+    text-transform: uppercase;
+    text-align: left;
+    margin-bottom: 8px; /* Reduced spacing */
+}
+
+.staff-title {
+  color: var(--Black, #000);
+  font-family: Inter;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 900;
+  line-height: 32px;
+  letter-spacing: 1.2px;
+  text-transform: uppercase;
+  text-align: left;
+  margin-bottom: 32px; /* Increased spacing */
+}
+
+.staff-bio p{
+color: var(--Black, #000);
+
+font-family: Inter !important;
+font-size: 16px;
+font-style: normal;
+font-weight: 500;
+line-height: 24px;
+}
+
+.staff-contact-form .form-control {
+    border-radius: 2px;
+    border: 1px solid #E5E5E5;
+    background: #FFF;
+    padding: 12px 15px;
+    height: auto;
+    font-family: Inter;
+    font-size: 14px;
+    color: #000;
+}
+
+.staff-contact-form textarea.form-control {
+    min-height: 120px;
+}
+.profi-detail{
+  max-width: 440px;
+}
+.staff-bio-form{
+  max-width: 440px;
+  margin: 0 auto;
+}
+
+
 /* Responsive Styles */
 
 @media screen and (min-width: 992px) {
@@ -1708,6 +1772,14 @@ text-transform: uppercase;
     font-size: 32px;
     letter-spacing: 1px;
   }
+  .new-arrivals-section .section-title {
+    font-size: 32px;
+    letter-spacing: 1px;
+}
+  .py-120 {
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
   .video-hero-section {
     height: 550px;
   }
@@ -1821,6 +1893,32 @@ text-transform: uppercase;
       margin-bottom: 20px;
   }
 
+
+    .staff-profile-section {
+        padding: 60px 0;
+    }
+    
+    .staff-name {
+        font-size: 32px;
+  text-align: center;
+    }
+    .staff-title{
+      text-align: center;
+    }
+    .profi-detail{
+  max-width: 100%;
+  padding-top: 20px;
+  text-align: center;
+}
+.staff-bio-form{
+  max-width: 100%;
+  margin: 0 auto;
+}
+
+
+
+
+
   /* -----footer style ------  */
 
   .site-footer {
@@ -1889,6 +1987,11 @@ text-transform: uppercase;
     font-size: 24px;
     letter-spacing: 1px;
   }
+  
+  .py-120 {
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
   .financing-herosec h1 {
       font-size: 32px;
       line-height: 36px;
@@ -1965,89 +2068,4 @@ text-transform: uppercase;
   .new-arrivals-section {
     padding: 40px 0;
   }
-}
-
-
-/* Staff Profile Section Styles */
-.staff-profile-section {
-    background-color: #fff;
-    
-}
-
-.staff-name {
-    color: var(--Black, #000);
-    font-family: "Poster Gothic Cond ATF", sans-serif;
-    font-size: 40px;
-    font-style: normal;
-    font-weight: 800;
-    line-height: normal;
-    text-transform: uppercase;
-    text-align: left;
-    margin-bottom: 8px; /* Reduced spacing */
-}
-
-.staff-title {
-  color: var(--Black, #000);
-  font-family: Inter;
-  font-size: 24px;
-  font-style: normal;
-  font-weight: 900;
-  line-height: 32px;
-  letter-spacing: 1.2px;
-  text-transform: uppercase;
-  text-align: left;
-  margin-bottom: 32px; /* Increased spacing */
-}
-
-.staff-bio p{
-color: var(--Black, #000);
-
-font-family: Inter !important;
-font-size: 16px;
-font-style: normal;
-font-weight: 500;
-line-height: 24px;
-}
-
-.staff-contact-form .form-control {
-    border-radius: 2px;
-    border: 1px solid #E5E5E5;
-    background: #FFF;
-    padding: 12px 15px;
-    height: auto;
-    font-family: Inter;
-    font-size: 14px;
-    color: #000;
-}
-
-.staff-contact-form textarea.form-control {
-    min-height: 120px;
-}
-.profi-detail{
-  max-width: 440px;
-}
-.staff-bio-form{
-  max-width: 440px;
-  margin: 0 auto;
-}
-
-@media (max-width: 991px) {
-    .staff-profile-section {
-        padding: 60px 0;
-    }
-    
-    .staff-name {
-        font-size: 32px;
-    }
-    
-    .text-end {
-        text-align: center;
-    }
-    .profi-detail{
-  max-width: 100%;
-}
-.staff-bio-form{
-  max-width: 100%;
-  margin: 0 auto;
-}
 }
