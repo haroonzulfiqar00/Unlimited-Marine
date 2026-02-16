@@ -100,39 +100,91 @@
                          <!-- Personal Info -->
                          <div class="row">
                             <div class="col-md-6 mb-3">
-                                <input type="text" class="form-control" placeholder="First Name" required>
+                                <div class="form-group">
+                                    <label id="first_nameLabel" for="first_name">First Name*</label>
+                                    <input type="text" class="form-control require_check"
+                                        aria-labelledby="first_nameLabel" id="first_name" maxlength="25"
+                                        placeholder="First Name">
+                                    <div class="field-error" id="error_first_name"></div>
+                                </div>
                             </div>
                             <div class="col-md-6 mb-3">
-                                <input type="text" class="form-control" placeholder="Last Name" required>
+                                <div class="form-group">
+                                    <label id="last_nameLabel" for="last_name">Last Name*</label>
+                                    <input type="text" class="form-control require_check"
+                                        aria-labelledby="last_nameLabel" id="last_name" maxlength="25"
+                                        placeholder="Last Name">
+                                    <div class="field-error" id="error_last_name"></div>
+                                </div>
                             </div>
                             <div class="col-md-6 mb-3">
-                                <input type="email" class="form-control" placeholder="Email" required>
+                                <div class="form-group">
+                                    <label id="emailLabel" for="email">Email*</label>
+                                    <input type="email" class="form-control require_check" aria-labelledby="emailLabel"
+                                        id="email" maxlength="25" placeholder="Email">
+                                    <div class="field-error" id="error_email"></div>
+                                </div>
                             </div>
                             <div class="col-md-6 mb-3">
-                                <input type="tel" class="form-control" placeholder="Phone" required>
+                                <div class="form-group">
+                                    <label id="phoneLabel" for="phone">Phone*</label>
+                                    <input type="tel" class="form-control require_check" aria-labelledby="phoneLabel"
+                                        id="phone" maxlength="25" placeholder="Phone">
+                                    <div class="field-error" id="error_phone"></div>
+                                </div>
                             </div>
                             <div class="col-md-6 mb-5">
-                                <input type="text" class="form-control" placeholder="Zip Code" required>
+                                <div class="form-group">
+                                    <label id="zipLabel" for="zip">Zip Code*</label>
+                                    <input type="text" class="form-control require_check" aria-labelledby="zipLabel"
+                                        id="zip" maxlength="25" placeholder="Zip Code">
+                                    <div class="field-error" id="error_zip"></div>
+                                </div>
                             </div>
                          </div>
         
                          <!-- Boat Info -->
                          <h4 class="form-subheading mb-4">BOAT INFO</h4>
-                         <div class="row">
+                         <div class="row mb-lg-5 mb-3">
                             <div class="col-md-6 mb-3">
-                                <input type="text" class="form-control" placeholder="Year">
+                                <div class="form-group">
+                                    <label id="yearLabel" for="year">Year*</label>
+                                    <input type="text" class="form-control require_check" aria-labelledby="yearLabel"
+                                        id="year" maxlength="25" placeholder="Year">
+                                    <div class="field-error" id="error_year"></div>
+                                </div>
                             </div>
                             <div class="col-md-6 mb-3">
-                                <input type="text" class="form-control" placeholder="Make">
+                                <div class="form-group">
+                                    <label id="makeLabel" for="make">Make*</label>
+                                    <input type="text" class="form-control require_check" aria-labelledby="makeLabel"
+                                        id="make" maxlength="25" placeholder="Make">
+                                    <div class="field-error" id="error_make"></div>
+                                </div>
                             </div>
                             <div class="col-md-6 mb-3">
-                                <input type="text" class="form-control" placeholder="Model">
+                                <div class="form-group">
+                                    <label id="modelLabel" for="model">Model*</label>
+                                    <input type="text" class="form-control require_check" aria-labelledby="modelLabel"
+                                        id="model" maxlength="25" placeholder="Model">
+                                    <div class="field-error" id="error_model"></div>
+                                </div>
                             </div>
                          </div>
         
                          <!-- Message -->
+                         <div class="form-group mb-3">
+                            <label id="partLabel" for="part">Part #(s)</label>
+                            <textarea class="form-control require_check" aria-labelledby="partLabel" id="part"
+                                maxlength="25" placeholder="Part #(s)"></textarea>
+                            <div class="field-error" id="error_part"></div>
+                         </div>
+                         <!-- Message -->
                          <div class="form-group mb-5">
-                             <textarea class="form-control" rows="5" placeholder="Describe Service Needs"></textarea>
+                            <label id="messageLabel" for="message">Message*</label>
+                            <textarea class="form-control require_check" aria-labelledby="messageLabel" id="message"
+                                maxlength="25" placeholder="Message"></textarea>
+                            <div class="field-error" id="error_message"></div>
                          </div>
         
                          <!-- Submit -->

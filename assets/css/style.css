@@ -259,7 +259,8 @@ h2 {
   background-color: #000;
   padding: 10px 0;
   width: 100%;
-  position: fixed;
+  position: sticky;
+  top: 0;
   z-index: 100;
 }
 
@@ -648,7 +649,7 @@ h2 {
 /* Hero Section Styles */
 .video-hero-section {
   position: relative;
-  height: 920px;
+  height: 820px;
   width: 100%;
   overflow: hidden;
   display: flex;
@@ -1228,6 +1229,12 @@ text-transform: uppercase;
   background-color: #fafafa;
 }
 
+.form-group {
+  margin-bottom: 0;
+}
+ .form-group label {
+  display: none;
+}
 .valuation-form textarea.form-control {
   height: auto;
 }
